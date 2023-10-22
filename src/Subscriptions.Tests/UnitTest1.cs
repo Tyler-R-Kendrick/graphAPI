@@ -1,4 +1,5 @@
 namespace Subscriptions.Tests;
+using Microsoft.Graph;
 
 public class Tests
 {
@@ -8,7 +9,7 @@ public class Tests
     }
 
     [Test]
-    public void Test1()
+    public async Task Test1()
     {
         // Code snippets are only available for the latest version. Current version is 5.x
         var graphClient = new GraphServiceClient(requestAdapter);
